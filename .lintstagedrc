@@ -1,6 +1,6 @@
 {
     "src/**/*.ts": [
-        "tslint --project .",
+        "yarn run chore:lint --",
         "prettier --parser typescript --write",
         "git add"
     ]

@@ -19,13 +19,13 @@
         "docs": "yarn run docs:build",
         "docs:dev": "vuepress dev docs",
         "docs:build": "vuepress build docs",
-        "chore:lint": "tslint --project .",
+        "chore:lint": "tslint --project . -e \"**/__{tests,mocks}__/**\" -e \"**/*.spec.*\"",
         "chore:format": "prettier --write src/**/*.ts",
+        "chore:deploy": "travis-deploy-once",
         "chore:release": "semantic-release",
         "chore:setup": "figlet -f \"Small Slant\" \"Setup\" && npx semantic-release-cli setup",
         "commit": "git-cz",
-        "precommit": "lint-staged",
-        "semantic-release": "semantic-release"
+        "precommit": "lint-staged"
     },
     "engines": {
         "node": ">=6.0.0",
@@ -50,7 +50,8 @@
         "typedoc": "^0.11.1",
         "typescript": "^2.9.2",
         "vuepress": "^0.10.1",
-        "webpack": "^4.12.0"
+        "webpack": "^4.12.0",
+        "travis-deploy-once": "5.0.0"
     },
     "dependencies": {
         "@types/node": "^10.3.3"
