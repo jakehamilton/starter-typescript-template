@@ -1,7 +1,7 @@
 {
     "src/**/*.ts": [
-        "figlet -f \"Small Slant\" \" Linting...\" && tslint --project .",
-        "figlet -f \"Small Slant\" \" Formatting...\" && prettier --parser typescript --write",
+        "tslint --project .",
+        "prettier --parser typescript --write",
         "git add"
     ]
 }
