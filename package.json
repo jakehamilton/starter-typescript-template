@@ -10,6 +10,10 @@
         "url": "<%- package.repository %>"
     },
     "license": "MIT",
+    "files": [
+        "dist",
+        "docs"
+    ],
     "scripts": {
         "build": "yarn run build:clean && yarn run build:code",
         "build:code": "tsc",
