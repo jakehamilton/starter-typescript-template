@@ -1,13 +1,13 @@
 {
-    "name": "@starters/typescript",
+    "name": "<%- package.name %>",
     "version": "0.0.0-development",
-    "description": "Get your next TypeScript project started!",
+    "description": "<%- package.description %>",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "author": "Jake Hamilton <jehamilton122@gmail.com>",
+    "author": "<%- npm.name %> <<%- npm.email %>>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jakehamilton/starter-typescript"
+        "url": "<%- package.repository %>"
     },
     "license": "MIT",
     "scripts": {
