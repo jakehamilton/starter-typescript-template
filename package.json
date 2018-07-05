@@ -4,12 +4,12 @@
     "description": "<%- package.description %>",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "author": "<%- npm.name %> <<%- npm.email %>>",
+    "author": "<%- author.name %> <<%- author.email %>>",
     "repository": {
         "type": "git",
         "url": "<%- package.repository %>"
     },
-    "license": "MIT",
+    "license": "<%- package.license %>",
     "files": [
         "dist",
         "docs"
