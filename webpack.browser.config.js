@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'lib.browser.js',
-        library: '<%- package.library ->',
+        library: '<%- package.library %>',
         libraryTarget: 'umd',
         globalObject: 'typeof self !== "undefined" ? self : this',
     },
