@@ -7,6 +7,12 @@ module.exports = [
     },
     {
         type: 'input',
+        name: 'package.library',
+        message: 'Exported Library Name',
+        default: 'Library',
+    },
+    {
+        type: 'input',
         name: 'package.description',
         message: 'Module Description',
     },

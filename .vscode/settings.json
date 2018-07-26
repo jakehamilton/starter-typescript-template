@@ -20,5 +20,4 @@
 
     // Do not force arrow functions to have parenthesis around its arguments
     "prettier.arrowParens": false,
-    "git.ignoreLimitWarning": true,
 }
