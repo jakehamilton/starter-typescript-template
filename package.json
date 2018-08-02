@@ -31,7 +31,8 @@
         "chore:release": "semantic-release",
         "chore:setup": "npx semantic-release-cli setup",
         "commit": "git-cz",
-        "precommit": "lint-staged"
+        "precommit": "lint-staged",
+        "prepublishOnly": "yarn test && yarn build"
     },
     "engines": {
         "node": ">=6.0.0",
